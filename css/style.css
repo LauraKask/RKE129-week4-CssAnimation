@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Riot&display=swap')
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #56a9bd;
+    overflow: hidden;
+}
+
+.container {
+    width: 55%;
+    margin: 32px auto;
+}
+
+.header {
+    height: 250px;
+    text-align: center;
+}
+
+.header h1 {
+    color: rgb(212, 204, 189);
+    font-size: 3.5rem;
+    font-family: "Montserrat", sans-serif;
+    position: relative; 
+    animation: header;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    /*animation-iteration-count: infinite;*/
+
+}
+
+@keyframes header {
+    0% {top: -250px}
+    100% {top: 100px}
+}
+
+.main{
+    color: rgb(231, 210, 170);
+    font-family: "Dancing Script", cursive;
+    line-height: 1.5;
+}
+
+.text-left {
+    position: relative;
+    animation: textLeft;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes textLeft {
+    0% {left: -1000px}
+    85% {left: 50px}
+    100% {left: 0}
+}
+
+.text-right{
+    position: relative;
+    margin-top: 32px;
+    text-align: right;
+    animation: textRight;
+    animation-duration: 5s;
+}
+
+@keyframes textRight {
+    0% {right: -1000px}
+    85% {right: 50px}
+    100% {right: 0}
+}
+
+
+.footer{
+    text-align: center;
+}
+
+.btn{
+    opacity: 0;
+    border: 2px solid greenyellow;
+    color: rgb(179, 228, 106);
+    font-size: 2rem;
+    font-family: "Dancing Script", cursive;
+    display: inline-block;
+    margin: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    animation: aniBtn;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aniBtn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
